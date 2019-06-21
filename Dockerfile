@@ -1,5 +1,7 @@
 FROM haproxy:2.0-alpine
 
+LABEL maintainer="soufiane.benali@vshn.ch"
+
 COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
 
 USER 1001

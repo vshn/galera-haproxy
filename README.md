@@ -1,11 +1,11 @@
 # galera-haproxy
 HAProxy docker image with custom configuration
 
-Dockerized HAProxy with default config file for a three node galera cluster. To ovveride the default configuration it's possible using the environemnt variables.
+Dockerized HAProxy with default config file for a multi node galera cluster. To ovveride the default configuration it's possible using the environemnt variables.
 
 ## Build
 ```
-docker build -t haproxy-mysql .
+docker build -t
 ```
 
 ## Run
