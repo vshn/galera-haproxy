@@ -3,11 +3,6 @@ HAProxy docker image with custom configuration
 
 Dockerized HAProxy with default config file for a multi node galera cluster. To ovveride the default configuration it's possible using the environemnt variables.
 
-## Build
-```
-docker build -t
-```
-
 ## Run
 You need to specify the addresses for DB1 through DB3 as well as passwords for service and monitoring users:
 ```
@@ -25,3 +20,10 @@ Config is done through env vars:
 | `DB2_PORT`                    | `3306`              | Port for DB2                    |
 | `DB3_ADDRESS`                 |                     | Address for DB3                 |
 | `DB3_PORT`                    | `3306`              | Port for DB3                    |
+
+
+## Build
+```
+docker build --rm -t vshn/galera-haproxy:1.0.0 .
+docker push vshn/galera-haproxy:1.0.0
+```
