@@ -1,10 +1,10 @@
 # galera-haproxy
 HAProxy docker image with custom configuration
 
-Dockerized HAProxy with default config file for a multi node galera cluster. To ovveride the default configuration it's possible using the environemnt variables.
+Dockerized HAProxy with default config file for a multi node galera cluster. To override the default configuration it's possible using the environemnt variables.
 
 ## Run
-You need to specify the addresses for DB1 through DB3 as well as passwords for service and monitoring users:
+You need to specify the addresses for DB1 through DB3 for service and monitoring users:
 ```
 docker run -e DB1_ADDRESS=127.0.0.1 -e DB2_ADDRESS=127.0.0.2 -e DB3_ADDRESS=127.0.0.3 haproxy-mysql
 ```
