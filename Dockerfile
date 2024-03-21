@@ -1,4 +1,4 @@
-FROM docker.io/haproxy:2.0-alpine@sha256:82289acd6e6268cb9ec31cf5ea553f2079485b97f9fc4266f3e8e27e58bdfa0c
+FROM docker.io/haproxy:2.9-alpine@sha256:554002a127d4909c721f56b5a306b0587587e83e855a35cb2cff9ff15204b63c
 
 LABEL maintainer="soufiane.benali@vshn.ch"
 
